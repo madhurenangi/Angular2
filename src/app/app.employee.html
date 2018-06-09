@@ -1,0 +1,26 @@
+<div class="container">
+  
+    <div class="label label-success">
+      Employee List Page
+    </div>
+    <div>&nbsp;
+    </div>
+  
+  <div class="col-md-12">
+    <table class="table table-bordered">
+      <tr>
+        <td>Name</td>
+        <td>City</td>
+        <td>Coutry</td>
+        
+      </tr>
+      <tr *ngFor="let x of listDetails" (click)="showDetails(x)">
+        <td>{{x.Name | customPipe}}</td>
+        <td>{{x.City}}</td>
+        <td>{{x.Country}}</td>
+       
+      </tr>
+    </table>
+  </div>
+</div>
+{{myError}}
